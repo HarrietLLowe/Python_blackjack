@@ -14,7 +14,7 @@ def deal_card():
 def calculate_score(cards):
   """Calculates the score of the user or computer"""
   if sum(cards) == 21 and len(cards) == 2:
-    return "BlackJack" 
+    return 0 #This is Blackjack 
   if 11 in cards and sum(cards) > 21:
     cards.remove(11)
     cards.append(1)
